@@ -23,7 +23,6 @@ module.exports = {
     'no-unused-expressions': 0,
     'no-irregular-whitespace': 0,
     'prefer-promise-reject-errors': 0,
-    'import/no-cycle': 1,
     curly: [2, 'all'],
     eqeqeq: [2, 'smart'],
     camelcase: [2, { allow: ['^UNSAFE_'] }],

@@ -20,7 +20,6 @@ module.exports = {
     '@typescript-eslint/explicit-function-return-type': 0,
     '@typescript-eslint/explicit-module-boundary-types': 0,
     '@typescript-eslint/explicit-member-accessibility': [0, { accessibility: 'explicit' }],
-    '@typescript-eslint/camelcase': 1,
     '@typescript-eslint/unified-signatures': 2,
     '@typescript-eslint/prefer-function-type': 2,
     '@typescript-eslint/array-type': [2, { default: 'array-simple' }],
