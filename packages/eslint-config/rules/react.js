@@ -6,6 +6,7 @@ module.exports = {
   plugins: ['react', 'react-hooks'],
   rules: {
     'react/no-deprecated': 0,
+    'react-hooks/exhaustive-deps': 0,
     'react/jsx-uses-vars': 2,
     'react-hooks/rules-of-hooks': 2,
   },
