@@ -1,0 +1,12 @@
+{
+  "name": "fespsp",
+  "version": "0.0.1",
+  "description": "The project contains the configuration of a series of code specifications, suck as ESLint, Prettier.",
+  "main": "index.js",
+  "author": "qin",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:luckqin/fespsp.git"
+  }
+}

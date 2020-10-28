@@ -1,0 +1,31 @@
+{
+  "name": "eslint-config-fespsp",
+  "version": "0.0.1",
+  "description": "An ESLint preset configuration for .vue, .js, .ts, .tsx",
+  "main": "index.js",
+  "author": "qin",
+  "license": "ISC",
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.6.0",
+    "@typescript-eslint/parser": "^4.6.0",
+    "babel-eslint": "^10.1.0",
+    "confusing-browser-globals-fresh": "^1.0.2",
+    "eslint-config-google": "^0.14.0",
+    "eslint-config-prettier": "^6.14.0",
+    "eslint-plugin-lean-imports": "^0.3.3",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.21.5",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "eslint-plugin-vue": "^7.1.0",
+    "eslint-plugin-vue-libs": "^4.0.0"
+  },
+  "peerDependencies": {
+    "eslint": "^6.8.0",
+    "typescript": "^3.7.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.12.1",
+    "prettier": "^2.1.2",
+    "typescript": "^4.0.5"
+  }
+}

@@ -1,0 +1,42 @@
+module.exports = {
+  parser: 'babel-eslint',
+  parserOptions: {
+    ecmaVersion: 2018,
+    sourceType: 'module'
+  },
+  env: {
+    es6: true,
+    commonjs: true
+  },
+  extends: ['eslint:recommended', 'google', 'plugin:prettier/recommended'],
+  plugins: ['lean-imports'],
+  rules: {
+    radix: 0,
+    complexity: 0,
+    'import/order': 0,
+    'valid-jsdoc': 0,
+    'require-jsdoc': 0,
+    'no-fallthrough': 0,
+    'no-invalid-this': 0,
+    'max-classes-per-file': 0,
+    'no-unused-expressions': 0,
+    'no-irregular-whitespace': 0,
+    'prefer-promise-reject-errors': 0,
+    curly: [2, 'all'],
+    eqeqeq: [2, 'always'],
+    camelcase: [2, { allow: ['^UNSAFE_'] }],
+    'no-var': 2,
+    'id-match': 2,
+    'no-console': 2,
+    'no-debugger': 2,
+    'dot-notation': 2,
+    'guard-for-in': 2,
+    'id-blacklist': 2,
+    'prefer-const': 2,
+    'spaced-comment': 2,
+    'object-shorthand': 2,
+    'no-throw-literal': 2,
+    'arrow-parens': [2, 'as-needed'],
+    'no-unused-vars': [2, { argsIgnorePattern: '^_', varsIgnorePattern: '^_' }],
+  },
+};
