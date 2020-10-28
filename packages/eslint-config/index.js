@@ -2,12 +2,12 @@ module.exports = {
   extends: [require.resolve('./rules/base')],
   overrides: [
     {
-      files: ['*.ts', '*.tsx'],
+      files: ['*.ts'],
       extends: [require.resolve('./rules/typescript')]
     },
     {
-      files: ['*.js', '*.tsx'],
-      extends: [require.resolve('./rules/react')]
+      files: ['*.tsx'],
+      extends: [require.resolve('./rules/react'), require.resolve('./rules/typescript')]
     },
     {
       files: ['*.vue'],
