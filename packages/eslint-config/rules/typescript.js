@@ -10,6 +10,7 @@ module.exports = {
     'no-unused-vars': 0,
     'no-dupe-class-members': 0,
     '@typescript-eslint/ban-ts-ignore': 0,
+    '@typescript-eslint/ban-ts-comment': 0,
     '@typescript-eslint/prefer-for-of': 0,
     '@typescript-eslint/member-ordering': 0,
     '@typescript-eslint/no-explicit-any': 0,

@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-fespsp",
-  "version": "0.0.4-beta1",
+  "version": "0.0.4-beta2",
   "description": "An ESLint preset configuration for .vue, .js, .ts, .tsx",
   "main": "index.js",
   "author": "qin",
