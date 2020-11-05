@@ -1,11 +1,11 @@
 {
   "name": "prettier-config-fespsp",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A prettier preset configuration",
   "main": "index.js",
   "author": "qin",
   "license": "ISC",
   "peerDependencies": {
-    "prettier": "^2.1.2"
+    "prettier": ">=2.1.2"
   }
 }
