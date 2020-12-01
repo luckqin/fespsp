@@ -9,6 +9,7 @@ module.exports = {
     'react-hooks/exhaustive-deps': 0,
     'react/jsx-uses-vars': 2,
     'react-hooks/rules-of-hooks': 2,
+    'react/prop-types': [2, { ignore: ['children'] }],
   },
   settings: {
     react: {
