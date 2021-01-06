@@ -66,3 +66,25 @@ module.exports = {
 ```
 
 > If you want to know more about prettier configuration, you can see https://prettier.io/docs/en/configuration.html
+
+### Eslint & Husky & Lint-Stage
+
+1. Install deps
+
+```
+yarn add -D husky
+yarn add -D lint-staged
+```
+
+2. Write to `package.json`
+
+```
+"husky": {
+  "hooks": {
+    "pre-commit": "lint-staged"
+  }
+},
+"lint-staged": {
+  "**/*.{js,jsx,ts,tsx,vue}": "eslint"
+}
+```
