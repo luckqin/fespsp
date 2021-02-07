@@ -1,22 +1,24 @@
 # fespsp
 
-🎃  Frontend Super Supervisor - 前端项目代码规范
+🎃 Frontend Super Supervisor - 前端项目代码规范
 
 > Frontend Super Supervisor 用于管理前端项目的代码规范
 
-### Feature
+## ✨ Feature
 
 🎉 Support ESLint preset config for .vue, .js, .ts, .tsx file.
 
 🎉 Support Prettier preset config.
 
-### 📦  Install
+## 📦 Install
 
 ```
 yarn add -D eslint typescript prettier
 yarn add -D eslint-config-fespsp
 yarn add -D prettier-config-fespsp
 ```
+
+## 🔨 Usage
 
 ### ESLint
 
@@ -81,7 +83,7 @@ yarn add -D lint-staged
 }
 ```
 
-### Custom Config
+### Custom Configurations
 
 This is default configurations（fileType: using rule）
 
