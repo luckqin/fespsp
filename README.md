@@ -33,21 +33,13 @@ module.exports = {
 };
 ```
 
-#### 2. Create `.lintstagedrc`
-
-```js
-{
-  "**/*.{js,jsx,ts,tsx,vue}": "eslint"
-}
-```
-
-#### 3. Create `.eslintignore`
+#### 2. Create `.eslintignore`
 
 ```ignorelang
 node_modules
 ```
 
-#### 4. Add lint command
+#### 3. Add lint command
 
 Add `"lint": "eslint --ext .js,.jsx,.ts,.tsx,.vue ."` to package.json's scripts
 
@@ -87,4 +79,46 @@ yarn add -D lint-staged
 "lint-staged": {
   "**/*.{js,jsx,ts,tsx,vue}": "eslint"
 }
+```
+
+### Custom Config
+
+This is default configurations（fileType: using rule）
+
+- `.js`: base
+- `.ts`: base + typescript
+- `.tsx`: base + react + typescript
+- `.vue`: base + vue
+
+About rules env
+
+- base: `{ es6: true, commonjs: true }`
+- react: `{ browser: true }`
+
+However, these configurations do not include the following situations
+
+#### 1. React code ending in `.js` or `.jsx`
+
+You can use `overrides` to deal with this scene
+
+```
+overrides: [
+  {
+    files: ['path/to/your/react-code/*.js', 'path/to/your/react-code/*.jsx'],
+    extends: [require.resolve('eslint-config-fespsp/rules/react')],
+  },
+]
+```
+
+#### 2. Node code ending in `.js`
+
+```
+overrides: [
+  {
+    files: ['path/to/your/node-code/*.js'],
+    env: {
+      node: true,
+    }
+  },
+],
 ```
