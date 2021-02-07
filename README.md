@@ -59,20 +59,20 @@ module.exports = {
 };
 ```
 
-> If you want to know more about prettier configuration, you can see https://prettier.io/docs/en/configuration.html
+> If you want to know more about prettier configuration, you can see https://prettier.io/docs/en/configuration.html.
 
 ### Eslint & Husky & Lint-Stage
 
 1. Install deps
 
-```
+```sh
 yarn add -D husky
 yarn add -D lint-staged
 ```
 
 2. Write to `package.json`
 
-```
+```json
 "husky": {
   "hooks": {
     "pre-commit": "lint-staged"
@@ -85,25 +85,25 @@ yarn add -D lint-staged
 
 ### Custom Configurations
 
-This is default configurations（fileType: using rule）
+Theses are default configurations（fileType: using rule）:
 
 - `.js`: base
 - `.ts`: base + typescript
 - `.tsx`: base + react + typescript
 - `.vue`: base + vue
 
-About rules env
+About rules env:
 
 - base: `{ es6: true, commonjs: true }`
 - react: `{ browser: true }`
 
-However, these configurations do not include the following situations
+However, these configurations do not include the following situations.
 
 #### 1. React code ending in `.js` or `.jsx`
 
-You can use `overrides` to deal with this scene
+You can use `overrides` in `.eslintrc.js` to deal with this scene.
 
-```
+```js
 overrides: [
   {
     files: ['path/to/your/react-code/*.js', 'path/to/your/react-code/*.jsx'],
@@ -114,7 +114,7 @@ overrides: [
 
 #### 2. Node code ending in `.js`
 
-```
+```js
 overrides: [
   {
     files: ['path/to/your/node-code/*.js'],
