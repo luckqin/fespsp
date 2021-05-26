@@ -23,7 +23,6 @@ module.exports = {
     '@typescript-eslint/explicit-member-accessibility': [0, { accessibility: 'explicit' }],
     '@typescript-eslint/unified-signatures': 2,
     '@typescript-eslint/prefer-function-type': 2,
-    '@typescript-eslint/array-type': [2, { default: 'array-simple' }],
     '@typescript-eslint/no-unused-vars': [2, { varsIgnorePattern: '^_', argsIgnorePattern: '^_' }],
   }
 }
